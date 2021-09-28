@@ -1,0 +1,14 @@
+C:\Users\t0168\source\repos\Server\bin\Debug\netcoreapp3.1\Server.exe
+C:\Users\t0168\source\repos\Server\bin\Debug\netcoreapp3.1\Server.deps.json
+C:\Users\t0168\source\repos\Server\bin\Debug\netcoreapp3.1\Server.runtimeconfig.json
+C:\Users\t0168\source\repos\Server\bin\Debug\netcoreapp3.1\Server.runtimeconfig.dev.json
+C:\Users\t0168\source\repos\Server\bin\Debug\netcoreapp3.1\Server.dll
+C:\Users\t0168\source\repos\Server\bin\Debug\netcoreapp3.1\Server.pdb
+C:\Users\t0168\source\repos\Server\obj\Debug\netcoreapp3.1\Server.csproj.AssemblyReference.cache
+C:\Users\t0168\source\repos\Server\obj\Debug\netcoreapp3.1\Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\t0168\source\repos\Server\obj\Debug\netcoreapp3.1\Server.AssemblyInfoInputs.cache
+C:\Users\t0168\source\repos\Server\obj\Debug\netcoreapp3.1\Server.AssemblyInfo.cs
+C:\Users\t0168\source\repos\Server\obj\Debug\netcoreapp3.1\Server.csproj.CoreCompileInputs.cache
+C:\Users\t0168\source\repos\Server\obj\Debug\netcoreapp3.1\Server.dll
+C:\Users\t0168\source\repos\Server\obj\Debug\netcoreapp3.1\Server.pdb
+C:\Users\t0168\source\repos\Server\obj\Debug\netcoreapp3.1\Server.genruntimeconfig.cache
