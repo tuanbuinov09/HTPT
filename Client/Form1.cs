@@ -13,6 +13,9 @@ namespace Client
 {
     public partial class Form1 : Form
     {
+        /*
+         * Tạo socket, network stream để nhận gửi dữ liệu
+         */
         System.Net.Sockets.TcpClient clientSocket = new System.Net.Sockets.TcpClient();
         NetworkStream serverStream;
         public Form1()
@@ -22,14 +25,24 @@ namespace Client
 
         private void button1_Click(object sender, EventArgs e)
         {
+        /*
+         * Event khi ấn nút gửi yêu cầu
+         * lấy đường dẫn nhập từ textBox
+         * tạo mảng byte outstream và chuyển đường dẫn đc nhập vào sang dạng mảng byte
+         * ghi outstream ra serverStream rồi clear dữ liệu trên stream đó
+         */
             string pathToSend = textBoxPath.Text;
             NetworkStream serverStream = clientSocket.GetStream();
             byte[] outStream = System.Text.Encoding.UTF8.GetBytes(pathToSend + "$");
             serverStream.Write(outStream, 0, outStream.Length);
             serverStream.Flush();
 
+            /*
+             * tạo mảng nhận dữ liệu từ server
+             * đọc dữ liệu từ server stream, chuyển sang dạng String và dùng hàm msg để hiển thị lên richtextbox
+             */
+
             byte[] inStream = new byte[10025];
-            /*serverStream.Read(inStream, 0, (int)clientSocket.ReceiveBufferSize);*/
             serverStream.Read(inStream, 0, inStream.Length);
             string returndata = System.Text.Encoding.UTF8.GetString(inStream);
    
@@ -46,8 +59,12 @@ namespace Client
         public void msg(string mesg)
         {
             richTextBox1.Text = "";
-            /*richTextBox1.Text = richTextBox1.Text + Environment.NewLine + " >> " + mesg;*/
             richTextBox1.Text = richTextBox1.Text  + " >> " + mesg;
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

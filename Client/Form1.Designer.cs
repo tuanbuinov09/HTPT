@@ -83,6 +83,7 @@ namespace Client
             this.richTextBox1.Size = new System.Drawing.Size(812, 219);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // label2
             // 
